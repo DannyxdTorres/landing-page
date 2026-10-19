@@ -16,9 +16,22 @@ git init
 git add index.html
 git add .
 ```
+- El Area de preparación es donde se preparan los cambios
 
 ## Paso 3
-Registrar una descripción
+Registrar una descripción del cambio realizado
 ```
 git commit -m "Proyecto base"
 ```
+
+## GitHub
+```
+git remote add origin https://github.com/DannyxdTorres/landing-page.git
+```
+- Enviar los cambios al repositorio Remoto
+```
+git push origin master
+```
+-------
+#### EJEMPLO
+- Copiar el archivo (.env.example) a (.env) y actualizar las credenciales

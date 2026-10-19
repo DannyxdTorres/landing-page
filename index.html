@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=h1h, initial-scale=1.0">
-     <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub - Precios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-     <h1>Bienvenido a Git & Github</h1>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    
+    <header class="text-center py-12 bg-white shadow-sm">
+        <h1 class="text-4xl font-extrabold text-gray-900">Bienvenido a Git & Github</h1>
+        <p class="mt-4 text-lg text-gray-500">Domina el control de versiones con nuestros planes.</p>
+    </header>
+
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Planes de Suscripción</h2>
+            <p class="mt-4 text-xl text-gray-500">Elige el nivel que mejor se adapte a tu flujo de trabajo.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Plan Básico -->
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8 hover:shadow-lg transition-shadow">
+                <h3 class="text-2xl font-semibold text-gray-900">Iniciante</h3>
+                <p class="mt-4 text-gray-500">Perfecto para dar tus primeros pasos en repositorios locales.</p>
+                <div class="mt-6">
+                    <span class="text-5xl font-extrabold text-gray-900">Gratis</span>
+                </div>
+                <ul class="mt-8 space-y-4">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Comandos básicos de Git
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Creación de repositorios
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Acceso a la comunidad
+                    </li>
+                </ul>
+                <button class="mt-8 w-full bg-gray-100 text-gray-900 font-semibold py-3 rounded-lg hover:bg-gray-200 transition-colors">Empezar ahora</button>
+            </div>
+
+            <!-- Plan Pro (Destacado) -->
+            <div class="bg-white rounded-2xl shadow-xl border-2 border-orange-500 p-8 transform md:-translate-y-4 relative">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide">Más Popular</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900">Desarrollador</h3>
+                <p class="mt-4 text-gray-500">Para quienes buscan dominar ramas, merges y trabajo remoto.</p>
+                <div class="mt-6 flex items-baseline text-5xl font-extrabold text-gray-900">
+                    $15
+                    <span class="ml-1 text-xl font-medium text-gray-500">/mes</span>
+                </div>
+                <ul class="mt-8 space-y-4">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Todo lo del plan Iniciante
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Resolución de conflictos (Merges)
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        GitHub Actions y CI/CD básico
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Soporte prioritario
+                    </li>
+                </ul>
+                <button class="mt-8 w-full bg-orange-500 text-white font-semibold py-3 rounded-lg hover:bg-orange-600 transition-colors shadow-lg shadow-orange-200">Suscribirse</button>
+            </div>
+
+            <!-- Plan Empresa -->
+            <div class="bg-white rounded-2xl shadow-md border border-gray-200 p-8 hover:shadow-lg transition-shadow">
+                <h3 class="text-2xl font-semibold text-gray-900">Equipo</h3>
+                <p class="mt-4 text-gray-500">Flujos de trabajo avanzados para empresas y equipos ágiles.</p>
+                <div class="mt-6 flex items-baseline text-5xl font-extrabold text-gray-900">
+                    $49
+                    <span class="ml-1 text-xl font-medium text-gray-500">/mes</span>
+                </div>
+                <ul class="mt-8 space-y-4">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Múltiples repositorios privados
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Revisiones de código (Pull Requests)
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Asesoría de arquitectura Git
+                    </li>
+                </ul>
+                <button class="mt-8 w-full bg-gray-100 text-gray-900 font-semibold py-3 rounded-lg hover:bg-gray-200 transition-colors">Contactar Ventas</button>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
