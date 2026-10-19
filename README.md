@@ -16,3 +16,9 @@ git init
 git add index.html
 git add .
 ```
+
+## Paso 3
+Registrar una descripción
+```
+git commit -m "Proyecto base"
+```
